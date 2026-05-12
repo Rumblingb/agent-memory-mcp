@@ -1,0 +1,40 @@
+# Smithery.ai deployment configuration for Agent Memory MCP
+name: agent-memory-mcp
+version: 1.0.0
+description: Persistent key-value memory for AI agents with TTL, namespaces, and search.
+
+runtime:
+  type: python
+  entrypoint: server.py
+  requirements: requirements.txt
+
+capabilities:
+  tools:
+    - memory_remember
+    - memory_recall
+    - memory_forget
+    - memory_search
+    - memory_list_namespaces
+    - memory_clear_namespace
+    - memory_stats
+
+pricing:
+  free:
+    max_entries: 1000
+  pro:
+    price: 19.00
+    currency: USD
+    interval: month
+    max_entries: unlimited
+    stripe_link: https://buy.stripe.com/PLACEHOLDER
+
+metadata:
+  author: Nous Research
+  license: MIT
+  repository: https://github.com/nousresearch/agent-memory-mcp
+  tags:
+    - memory
+    - storage
+    - agents
+    - persistence
+    - kv-store
