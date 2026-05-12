@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Memory MCP — Persistent Memory for AI Agents</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(135deg, #58a6ff, #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { font-size: 1.2rem; color: #8b949e; margin-bottom: 2rem; }
+        .badges { margin: 1rem 0 2rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .badge { background: #21262d; border: 1px solid #30363d; border-radius: 6px; padding: 4px 12px; font-size: 0.85rem; }
+        .cta { display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .btn { padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.2s; }
+        .btn-primary { background: #238636; color: #fff; border: 1px solid #2ea043; }
+        .btn-primary:hover { background: #2ea043; }
+        .btn-secondary { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; }
+        .btn-secondary:hover { background: #30363d; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
+        .feature { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.5rem; }
+        .feature h3 { color: #58a6ff; margin-bottom: 0.5rem; }
+        .code-block { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; overflow-x: auto; }
+        .code-block code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9rem; }
+        .footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #21262d; color: #8b949e; font-size: 0.85rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Agent Memory MCP</h1>
+        <p class="subtitle">Persistent key-value memory for AI agents — like Redis, but simpler. Built for the MCP ecosystem.</p>
+
+        <div class="badges">
+            <span class="badge">MCP Server</span>
+            <span class="badge">Python 3.10+</span>
+            <span class="badge">MIT License</span>
+            <span class="badge">v1.0.0</span>
+        </div>
+
+        <div class="cta">
+            <a href="https://github.com/nousresearch/agent-memory-mcp" class="btn btn-primary">⭐ Star on GitHub</a>
+            <a href="https://buy.stripe.com/PLACEHOLDER" class="btn btn-secondary">💎 Go Pro — $19/mo</a>
+        </div>
+
+        <h2>Why Agent Memory?</h2>
+        <p>AI agents lose <strong>all context</strong> between sessions. Every conversation starts from zero. Agent Memory MCP fixes this by giving agents a persistent, searchable memory that survives restarts, crashes, and context-window limits.</p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>⏱️ TTL Support</h3>
+                <p>Auto-expiring memories with second-level precision. Set it and forget it.</p>
+            </div>
+            <div class="feature">
+                <h3>📁 Namespaces</h3>
+                <p>Organize memories by project, user, or domain. Isolated storage per namespace.</p>
+            </div>
+            <div class="feature">
+                <h3>🔍 Fuzzy Search</h3>
+                <p>Find memories by keyword across all namespaces. Case-insensitive, ranked by relevance.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Access Tracking</h3>
+                <p>Every memory tracks create time, last access, and access count for analytics.</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Thread-Safe</h3>
+                <p>POSIX file locking ensures safe concurrent access from multiple agents.</p>
+            </div>
+            <div class="feature">
+                <h3>💰 Free Tier</h3>
+                <p>1,000 entries free. Need more? Go Pro for unlimited storage at $19/month.</p>
+            </div>
+        </div>
+
+        <h2>Quick Install</h2>
+        <div class="code-block">
+            <code>pip install agent-memory-mcp</code>
+        </div>
+
+        <h2>Tools</h2>
+        <div class="code-block">
+            <code>
+memory_remember  — Store a value with optional TTL<br>
+memory_recall    — Retrieve a value + metadata<br>
+memory_forget    — Delete a key permanently<br>
+memory_search    — Search all namespaces by keyword<br>
+memory_list_namespaces — List namespaces with counts<br>
+memory_clear_namespace — Wipe a namespace<br>
+memory_stats     — Global storage statistics
+            </code>
+        </div>
+
+        <div class="footer">
+            Built by <a href="https://nousresearch.com" style="color:#58a6ff">Nous Research</a> &middot; Open source under MIT &middot; <a href="https://github.com/nousresearch/agent-memory-mcp" style="color:#58a6ff">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
