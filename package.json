@@ -1,0 +1,18 @@
+﻿{
+  "name": "agent-memory-mcp",
+  "version": "1.0.0",
+  "description": "Persistent key-value memory for AI agents with TTL and search",
+  "main": "index.js",
+  "bin": {
+    "agent-memory-mcp": "./index.js"
+  },
+  "keywords": ["mcp","ai-agent","memory","persistence","agentpay"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rumblingb/agent-memory-mcp.git"
+  },
+  "homepage": "https://rumblingb.github.io/agent-memory-mcp/",
+  "author": "AgentPay Labs",
+  "license": "MIT",
+  "dependencies": {}
+}
